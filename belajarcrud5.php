@@ -36,9 +36,9 @@
 
         ?>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Buku</td>
+            <td>High school dxd</td>
+            <td>baku no pico</td>
             <td></td>
             <td></td>
         </tr>
