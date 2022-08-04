@@ -7,10 +7,9 @@
 <body>
     <h2>CRUD data perpustakaan</h2>
     <br />
-    <a href="tambah.php">Tambah Data</a>
     <br />
     <br />
-
+    <h1>Anggota</h1>
     <table border="1">
         <tr>
             <th>NO</th>
@@ -21,27 +20,21 @@
         </tr>
 
         <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $database = "db_perpusweb";
-
-        $connect = mysqli_connect($servername, $username, $password, $database);
-
+        include 'koneksi.php';
         $no = 1;
-        $data = mysqli_query($connect,"select * from anggota");
-        while($d = mysqli_fetch_array($data)){
-            
-        }
-
+        $data = mysqli_query($connect, "select * from anggota");
+        while ($d = mysqli_fetch_array($data)) {
         ?>
-        <tr>
-            <td>Buku</td>
-            <td>High school dxd</td>
-            <td>baku no pico</td>
-            <td></td>
-            <td></td>
-        </tr>
+            <tr>
+                <td><?php echo $no++; ?></td>
+                <td><?php echo $d['nama']; ?></td>
+                <td><?php echo $d['no_tlp']; ?></td>
+                <td><?php echo $d['alamat']; ?></td>
+                <td><?php echo $d['email']; ?></td>
+            </tr>
+        <?php
+        }
+        ?>
     </table>
 </body>
 
