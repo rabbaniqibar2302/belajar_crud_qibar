@@ -13,8 +13,8 @@
         <label for="nama">Nama</label>
         <input type="text" name="nama" id="nama">
         <br>
-        <label for="no_telp">No Telp</label>
-        <input type="number" name="no_telp" id="no_telp">
+        <label for="no_tlp">No Telp</label>
+        <input type="number" name="no_tlp" id="no_tlp">
         <br>
         <label for="alamat">Alamat</label>
         <input type="text" name="alamat" id="alamat">
@@ -22,7 +22,10 @@
         <label for="email">Email</label>
         <input type="email" name="email" id="email">
         <br>
-        <input type="submit" value="SIMPAN">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <input type="submit" value="submit">
     </form>
 </body>
 
